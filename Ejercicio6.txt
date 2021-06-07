@@ -1,0 +1,25 @@
+Proceso
+	var mayor25 <- 0
+	var tmayor25 <- 0
+	var menor25 <- 0
+	var tmenor <- 0
+	var prom1
+	var prom2
+	Para i = 0, hasta i < 100, i = i + 1
+		var edad
+		Escribir "Ingresa la edad"
+		Leer edad
+		Si edad >= 25
+			mayor25 = mayor25 + 1
+			tmayor25 = tmayor25 + edad
+		Sino
+			menor25 = menor25 +1
+			tmenor25 = tmenor25 + edad
+		Finsi
+		
+	FinPara
+	prom1 <- tmayor25/mayor25
+	prom2 <- tmenor25/menor25
+	Escribir "El promedio de edad de personas mayores de 25 años es de " + prom1
+	Escribir "El promedio de edad de personas menores de 25 años es de " + prom2
+FinProceso
